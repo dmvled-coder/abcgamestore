@@ -51,10 +51,11 @@
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
-        .logo svg {
-            width: 48px;
-            height: 48px;
-            fill: #ffffff;
+        .logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain; /* Giúp logo không bị méo/co giãn sai tỷ lệ */
+            border-radius: 12px; /* Bo góc nếu logo là hình vuông */
         }
 
         .brand-container:hover .logo {
@@ -236,9 +237,7 @@
         <a href="#" class="brand-container">
             <div class="logo">
                 <!-- Icon Tay Cầm Game (SVG) -->
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                    <path d="M21 6H3c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-10 7H9v2H7v-2H5v-2h2V9h2v2h2v2zm4.5 1c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm3-3c-.83 0-1.5-.67-1.5-1.5S17.67 9 18.5 9s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/>
-                </svg>
+                <img src="duong-dan-anh-logo-cua-ban.png" alt="Logo Trang Web">
             </div>
             <h1 class="site-title">HELI ZONE</h1>
         </a>
